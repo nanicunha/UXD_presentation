@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Broke Website</title>
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f7f9ff;
+      color: #142034;
+      text-align: center;
+      line-height: 1.6;
+    }
+    section {
+      padding: 300px 20px;
+    }
+    h1 {
+      font-size: 2.2em;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 1.3em;
+      color: #5a6b86;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 14px 28px;
+      background: #0d6efd;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #e74c3c;
+    }
+    .error {
+      margin-top: 40px;
+      font-size: 1.3em;
+      color: #e74c3c;
+      font-weight: bold;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <h1>Hi, I'm looking for you...</h1>
+    <p>No name. No photos. Just me.</p>
+<a href="#" class="btn" onclick="showError(event)">See my phone number</a>
+    <div id="errorMsg" class="error">
+      ❌ Error: This person cannot receive messages.
+    </div>
+  </section>
+
+  <section style="background:#eef9f1; padding:800px 20px;">
+    <h2>But then, a new website was created by me...</h2>
+    <p>an experienced User Experience Designer 👩🏼‍💻</p>
+<a href="404.html" class="btn">The New Website</a>
+</section>
+
+
+  <script>
+    function showError(e) {
+      e.preventDefault();
+      document.getElementById('errorMsg').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
